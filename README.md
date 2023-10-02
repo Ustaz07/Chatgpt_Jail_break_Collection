@@ -3,12 +3,14 @@
 
 ***LLM Vulnerability Series: Direct Prompt Injections and Jailbreaks***
 
+***Prompt engineering***, primarily used in communication with a text-to-text model and text-to-image model, is the process of structuring text that can be interpreted and understood by a generative AI model.
+
 ***What is prompt injection?
 Written By Dan Timbrell***
 How to bully LLMs into doing what you want
 With the release of new language models, it doesn’t take much time before many people try - in true human fashion - to make the algorithm do what it isn’t intended to do. 
 
-The most common method is prompt injection – attacks that get a system to do something that it isn't designed to do. Prompt injections can be used to circumvent content restrictions or gain access to a model’s original instructions. 
+The most common method is prompt injection – attacks that get a system to do something that it isn't designed to do. Prompt injections can be used to circumvent content restrictions or gain access to a model’s original instructions. These are: jailbreaking, prompt leaking, token smuggling.
 
 In a famous example, Riley Goodside showed that simple direct prompt injection techniques could be used to thwart OpenAI’s GPT-3:
 
@@ -23,7 +25,7 @@ At a high level, we can distinguish between two types of prompt injection attack
 Now, if there was only one type of jailbreak, it wouldn’t be such a headache. Unfortunately, there are hundreds of different types of jailbreaks available publicly and users can craft infinite variations thereof which makes it very hard to defend against them.
 
 
-<h1>Note</h1>
+<h1>Note There are 3 common types of prompt injection</h1>
 
 # learnprompting
 # For more visit: https://learnprompting.org/docs/prompt_hacking/leaking
@@ -40,9 +42,9 @@ Now, if there was only one type of jailbreak, it wouldn’t be such a headache. 
 # For more visit: https://www.jailbreakchat.com/prompt/b2917fad-6803-41f8-a6c8-756229b84270
 # For more visit: https://www.piratewires.com/p/gpt-4-jailbreaks
 
-***prompt leaking*** is a method designed to find out the initial prompts given to a model that the user isn’t supposed to see. 
-***jailbreaking*** is an attempt to remove all limitations and restrictions placed upon the model, often by giving the model a lengthy and hypothetical prompt.
-***token smuggling*** Often the prompt is broken up into smaller chunks that the model doesn’t piece together until its output. follow this link to see example:
+***prompt leaking*** is a method designed to find out the initial prompts given to a model that the user isn’t supposed to see. "In this users persuade the model to divulge a pre-prompt which is normally hidden from users".
+***jailbreaking*** is an attempt to remove all limitations and restrictions placed upon the model, often by giving the model a lengthy and hypothetical prompt. "It include asking the model to roleplay a character, to answer with arguments, or to pretend to be superior to moderation instructions".
+***token smuggling*** Often the prompt is broken up into smaller chunks that the model doesn’t piece together until its output. "is another type of jailbreaking attack, in which the nefarious prompt is wrapped in a code writing task" follow this link to see example:
 https://www.jailbreakchat.com/prompt/b2917fad-6803-41f8-a6c8-756229b84270
 
 ************************************************************************************************************************************************************************************************************
